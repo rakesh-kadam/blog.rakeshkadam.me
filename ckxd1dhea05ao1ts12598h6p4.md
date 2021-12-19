@@ -139,3 +139,162 @@ Asia Pacific,
 Middle East and Africa
 - Each region belongs only to one Geography
 
+# Azure Resource
+
+- Object used to manage services in Azure
+- Represents service lifecycle
+- Saved as JSON definition
+
+# Resource Groups
+
+* Grouping of resources
+* Holds logically related resources
+* Typically organizing by : Type,
+Lifecycle (app, environment),
+Department,
+Billing,
+Location or
+combination of those
+
+# Resource Manager
+
+- **Management Layer** for all resources and resource groups
+- **Unified** language
+-** Controls access** and **resources**
+
+# Additional Info
+
+- Each resource must be in one, and only one resource group
+- Resource groups have their own location assigned
+- Resources in the resource groups can reside in a different locations
+- Resources can be moved between the resource groups
+- Resource groups can’t be nested
+- Organize based on your organization needs but consider: Billing
+Security and access management
+Application Lifecycle
+
+# Virtualization
+
+- Emulation of physical machines
+- Different virtual hardware configuration per machine/app
+- Different operating systems per machine/app
+- Total separation of environments: file systems,
+services,
+ports,
+middleware,
+configuration
+
+# Virtual Machines
+
+- Infrastructure as a Service (IaaS)
+- Total control over the operating system and the software
+- Supports marketplace and custom images
+- Best suited for: Custom software requiring custom system configuration,
+Lift-and-shift scenarios
+- Can run any application/scenario: web apps & web services,
+databases,
+desktop applications,
+jumpboxes,
+gateways, etc.
+
+# Virtual Machine Scale Sets
+
+- Infrastructure as a Service (IaaS)
+- Set of identical virtual machines
+- Built-in auto scaling features
+- Designed for manual and auto-scaled workloads like web services,* batch processing, etc.
+
+# Containers
+
+- Use host’s operating system
+- Emulate operating system (VMs emulate hardware)
+- Lightweight (no O/S): Development Effort
+Maintenance
+Compute & storage requirements
+- Respond quicker to demand changes
+- Designed for almost any scenario
+
+# Azure Container Instances
+
+- Simplest and fastest way to run a container in Azure
+- Platform as a Service
+- Serverless Containers
+- Designed for: Small and simple web apps/services
+Background jobs
+Scheduled scripts
+
+# Azure Kubernetes Service (AKS)
+
+- Open-source container orchestration platform
+- Platform as a Service
+- Highly scalable and customizable
+- Designed for high scale container deployments (anything really!)
+
+# App Service
+
+- Designed as enterprise grade web application service
+- Platform as a Service
+- Supports multiple programming languages and containers
+
+# Azure Functions (Function Apps)
+
+- Platform as a Service
+- Serverless
+- Two hosting/pricing models: Consumption-based plan
+Dedicated plan
+- Designed for micro/nano-services
+
+# Summary
+- **Virtual Machines (IaaS)** - Custom software, custom requirements, very specialized, high degree of control
+- **VM Scale Sets (IaaS)** - Auto-scaled workloads for VMs
+- **Container Instances (PaaS)** - Simple container hosting, easy to start
+- **Kubernetes Service (PaaS)** - Highly scalable and customizable * container hosting platform
+- **App Services (PaaS)** - Web applications, a lot of enterprise web * hosting features, easy to start
+- **Functions (PaaS) (Function as a Service) (Serverless)** - micro/nano-services, excellent consumption-based pricing, easy to start
+
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1639915525781/kVJvR-i7B.png)
+
+# Azure Networking
+
+- Connect cloud and on-premises
+- On-premise networking functionality
+
+# Azure Virtual Network
+
+- Logically isolated networking components
+- Segmented into one or more subnets
+- Subnets are discrete sections
+- Enable communication of resources with each-other, internet and on-premises
+- Scoped to a single region
+- VNet peering allow cross region communication
+- Isolation, Segmentation, Communication, Filtering, Routing
+
+# Azure Load Balancer
+
+- Even traffic distribution
+- Supports both inbound and outbound scenarios
+- High-availability scenarios
+- Both TCP (transmission control protocol) and UDP (user datagram protocol) applications
+- Internal and External traffic
+- Port Forwarding
+- High scale with up to millions of flows
+
+# VPN Gateway
+
+- Specific type of virtual network gateway for on-premises to azure traffic over the public internet
+
+# Application Gateway
+
+- Web traffic load balancer
+- Web application firewall
+- Redirection
+- Session affinity
+- URL Routing
+- SSL termination
+
+# Content Delivery Network
+
+- Define content
+- Minimize latency
+- POP (points of presence) with many locations

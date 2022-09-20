@@ -1,4 +1,4 @@
-## Azure Fundamental: Part 1
+## Azure Fundamental
 
 # Cloud Computing
 Service delivery model over the internet (cloud). This includes but is not limited to

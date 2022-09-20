@@ -31,7 +31,7 @@ $ docker run <image-name>:<image-tag>
 
 Download a docker image
 ```
-$ docker pull <image-name>:<imag-tag>
+$ docker pull <image-name>:<image-tag>
 ```
 	
 Append a command

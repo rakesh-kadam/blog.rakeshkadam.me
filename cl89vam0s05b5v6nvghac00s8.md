@@ -36,7 +36,7 @@ $ docker pull <image-name>:<imag-tag>
 	
 Append a command
 ```
-$ docker run <image> sleep 5 
+$ docker run <image> bash
 ```
 
 Execute a command
